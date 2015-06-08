@@ -25,6 +25,7 @@
     "browserify": "^10.2.4",
     "del": "^1.2.0",
     "gulp": "^3.9.0",
+    "gulp-cache": "^0.2.10",
     "gulp-if": "^1.2.5",
     "gulp-imagemin": "^2.2.1",
     "gulp-jshint": "^1.11.0",
