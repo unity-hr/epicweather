@@ -5,7 +5,10 @@ var browserSync = require('browser-sync');
 var shell = require('shelljs');
 
 gulp.task('html', ['scripts', 'styles'], function () {
-  gulp.src('app/**/*.html')
+  gulp.src([
+    'app/**/*.html',
+    'app/scripts/vendor/modernizr*.js'
+  ], {base: 'app'})
     .pipe(gulp.dest('dist'));
 
   return gulp.src([
@@ -29,7 +32,6 @@ gulp.task('connect:dist', function (done) {
   browserSync({
     notify: false,
     port: 9000,
-    open: false,
     server: {
       baseDir: ['dist']
     },
