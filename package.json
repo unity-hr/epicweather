@@ -9,9 +9,13 @@
     "preview": "gulp connect:dist",
     "deploy": "gulp deploy"
   },
+  "browserify-shim": {
+    "modernizr": "global:Modernizr"
+  },
   "browserify": {
     "transform": [
-      "babelify"
+      "babelify",
+      "browserify-shim"
     ]
   },
   "devDependencies": {
