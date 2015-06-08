@@ -1,0 +1,42 @@
+&-team {
+  padding-bottom: 20rem;
+
+  .section {
+    &-icon,
+    &-title,
+    &-item-title {
+      color: #868889;
+    }
+
+    &-title {
+      margin-bottom: 0.75em;
+    }
+
+    &-items {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-item {
+      margin: 0 4rem;
+
+      &-image {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 294px;
+        margin-bottom: 4rem;
+      }
+
+      &-title {
+        margin-bottom: 0;
+        font-size: 24px;
+      }
+
+      &-role {
+        font-size: 16px;
+        color: #000;
+      }
+    }
+  }
+}

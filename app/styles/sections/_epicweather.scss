@@ -1,0 +1,17 @@
+&-epicweather {
+  padding: 0;
+
+  .flickity-page-dots {
+    bottom: 2rem;
+
+    .dot {
+      margin: 0 3px;
+      background: #fff;
+      opacity: 0.5;
+
+      &.is-selected {
+        opacity: 1;
+      }
+    }
+  }
+}

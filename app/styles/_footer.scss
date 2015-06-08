@@ -1,0 +1,49 @@
+.footer {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background: #161616;
+  color: #fff;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-filler,
+  &-social {
+    width: 8rem;
+  }
+
+  &-copyright {
+    @include font-smoothing;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      margin-right: 1rem;
+      color: #00B1FF;
+    }
+
+    b {
+      display: inline-block;
+      margin-right: 2rem;
+    }
+  }
+
+  &-social {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    &-item {
+      flex: 1;
+    }
+
+    a {
+      display: block;
+      padding: 1rem 0;
+      color: #fff;
+    }
+  }
+}

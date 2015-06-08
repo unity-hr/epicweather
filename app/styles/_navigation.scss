@@ -1,0 +1,40 @@
+.navigation {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-size: 16px;
+  color: #fff;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-logo,
+  &-list a {
+    color: inherit;
+  }
+
+  &-items {
+    display: flex;
+    align-items: center;
+  }
+
+  &-list {
+    display: flex;
+
+    a {
+      display: block;
+      padding: 1rem;
+    }
+  }
+
+  .btn {
+    margin-left: 1rem;
+  }
+}

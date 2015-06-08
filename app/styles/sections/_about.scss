@@ -1,0 +1,34 @@
+&-about {
+  & + & {
+    border-top: 1px solid #D8D8D8;
+  }
+
+  .section {
+    &-image {
+      margin-top: 13rem;
+    }
+  }
+}
+
+@each $section, $color in (
+  smart: #319DFF,
+  infinite: #9633FF,
+  fun: #FD8E00
+) {
+  &-#{$section} {
+    .section {
+      &-icon,
+      &-title {
+        color: $color;
+      }
+    }
+  }
+}
+
+&-infinite &-image {
+  margin-right: -5rem;
+}
+
+&-fun &-image {
+  margin-top: 8rem;
+}

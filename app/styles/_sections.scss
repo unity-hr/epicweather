@@ -1,0 +1,30 @@
+.section {
+  position: relative;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  overflow: hidden;
+  text-align: center;
+
+  &-icon {
+    display: inline-flex;
+    margin-bottom: 4rem;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border: 1px solid #D8D8D8;
+    border-radius: 50%;
+  }
+
+  &-lead {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @import 'sections/epicweather';
+  @import 'sections/about';
+  @import 'sections/platforms';
+  @import 'sections/team';
+  @import 'sections/subscribe';
+}

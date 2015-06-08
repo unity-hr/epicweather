@@ -1,0 +1,58 @@
+&-platforms {
+  padding-bottom: 0;
+  background: #38316D;
+  color: rgba(#fff, 0.75);
+  text-align: left;
+  overflow: hidden;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .section {
+    &-image {
+      margin-right: 10rem;
+      margin-bottom: -13rem;
+    }
+
+    &-text {
+      flex: 1 1 0%;
+    }
+
+    &-title {
+      margin-bottom: 0.25em;
+      font-size: 90px;
+      color: #fff;
+    }
+
+    &-lead {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 4rem;
+    }
+
+    &-items {
+      display: flex;
+      color: #fff;
+
+      a {
+        display: block;
+        color: inherit;
+      }
+    }
+
+    &-item + .section-item {
+      margin-left: 4rem;
+    }
+
+    &-footer {
+      margin-top: 13rem;
+
+      .icon {
+        margin-left: 2em;
+        color: #fff;
+      }
+    }
+  }
+}
