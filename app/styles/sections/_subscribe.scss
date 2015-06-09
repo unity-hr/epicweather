@@ -1,5 +1,5 @@
 &-subscribe {
-  padding-bottom: 0;
+  padding-bottom: 1rem;
   background: #262626;
   color: #fff;
 
@@ -31,5 +31,29 @@
         box-shadow: 0 1rem rgba(#fff, 0.1);
       }
     }
+
+    &-feedback {
+      @media (min-width: 60em) {
+        bottom: 6rem;
+      }
+
+      &-loading {
+        animation: loading 1s infinite;
+      }
+    }
+  }
+}
+
+@keyframes loading {
+  0% {
+    color: rgba(#fff, 0.1);
+  }
+
+  50% {
+    color: rgba(#fff, 0.25);
+  }
+
+  100% {
+    color: rgba(#fff, 0.1);
   }
 }

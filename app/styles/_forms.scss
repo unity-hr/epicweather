@@ -1,4 +1,6 @@
 .form {
+  position: relative;
+
   &-control {
     display: block;
     width: 100%;
@@ -12,6 +14,22 @@
 
     &:focus {
       outline: none;
+    }
+  }
+
+  &-feedback {
+    display: none;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &-success {
+      color: #5cb85c;
+    }
+
+    &-error {
+      color: #d9534f;
     }
   }
 }

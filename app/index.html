@@ -230,6 +230,21 @@
         <form class="form" action="#" novalidate>
           <label class="sr-only" for="subscribeEmail">Enter your mail to receive updates</label>
           <input id="subscribeEmail" class="form-control" type="email" name="email" placeholder="Enter your mail to receive updates">
+          <div class="form-feedback form-feedback-loading">
+            <svg class="icon" role="img" title="Loading" width="69" height="42">
+              <use xlink:href="images/icons.svg#logo" />
+            </svg>
+          </div>
+          <div class="form-feedback form-feedback-success">
+            <svg class="icon" role="img" title="Success" width="50" height="42">
+              <use xlink:href="images/icons.svg#check" />
+            </svg>
+          </div>
+          <div class="form-feedback form-feedback-error">
+            <svg class="icon" role="img" title="Error" width="40" height="42">
+              <use xlink:href="images/icons.svg#x" />
+            </svg>
+          </div>
         </form>
       </div>
     </section>
