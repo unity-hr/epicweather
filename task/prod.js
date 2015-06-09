@@ -42,7 +42,7 @@ gulp.task('connect:dist', function (done) {
 gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
 
 gulp.task('build', ['jshint', 'html', 'images', 'extras'], function () {
-  return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
+  return gulp.src('dist/**/*').pipe($.size({title: 'build', showFiles: true, gzip: true}));
 });
 
 gulp.task('default', ['clean'], function () {
