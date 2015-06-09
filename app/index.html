@@ -56,10 +56,10 @@
 
         <div class="navigation-items">
           <ul class="navigation-list">
-            <li><a class="goto" href="#epicweather">Epic Weather</a></li>
-            <li><a class="goto" href="#about">About</a></li>
-            <li><a class="goto" href="#platforms">Platform</a></li>
-            <li><a class="goto" href="#team">Team</a></li>
+            <li class="navigation-list-item"><a class="goto" href="#epicweather">Epic Weather</a></li>
+            <li class="navigation-list-item"><a class="goto" href="#about">About</a></li>
+            <li class="navigation-list-item"><a class="goto" href="#platforms">Platform</a></li>
+            <li class="navigation-list-item"><a class="goto" href="#team">Team</a></li>
           </ul>
           <a class="goto btn btn-inverse" href="#subscribe">Get in touch</a>
         </div>
@@ -146,10 +146,6 @@
 
     <section class="section section-platforms" id="platforms">
       <div class="container">
-        <div class="section-image">
-          <img src="images/mobile.png" width="316" height="658" alt="Mobile">
-        </div>
-
         <div class="section-text">
           <h2 class="section-title">Platforms</h2>
           <div class="section-lead">
@@ -177,6 +173,10 @@
               <use xlink:href="images/icons.svg#unity" />
             </svg>
           </div>
+        </div>
+
+        <div class="section-image">
+          <img src="images/mobile.png" width="316" height="658" alt="Mobile">
         </div>
       </div>
     </section>
@@ -239,11 +239,13 @@
         <div class="footer-filler"></div>
 
         <div class="footer-copyright">
-          <svg class="icon" role="img" title="Logo" width="34.5" height="21">
-            <use xlink:href="images/icons.svg#logo" />
-          </svg>
-          <b>Epic Weather 2015.</b>
-          All rights reserved
+          <div class="footer-copyright-company">
+            <svg class="icon" role="img" title="Logo" width="34.5" height="21">
+              <use xlink:href="images/icons.svg#logo" />
+            </svg>
+            <b>Epic Weather 2015.</b>
+          </div>
+          <div class="footer-copyright-rights">All rights reserved</div>
         </div>
 
         <ul class="footer-social">

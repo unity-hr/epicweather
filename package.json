@@ -7,6 +7,7 @@
     "start": "GULP_ENV=development gulp serve",
     "build": "GULP_ENV=production gulp",
     "preview": "gulp connect:dist",
+    "cbt": "gulp connect:cbt",
     "deploy": "gulp deploy"
   },
   "browserify-shim": {
@@ -46,9 +47,11 @@
     "watchify": "^3.2.2"
   },
   "dependencies": {
+    "es6-promise": "^2.2.0",
     "flickity": "^1.0.2",
     "imagesloaded": "^3.1.8",
     "skrollr": "^0.6.26",
-    "velocity-animate": "^1.2.2"
+    "velocity-animate": "^1.2.2",
+    "whatwg-fetch": "^0.9.0"
   }
 }

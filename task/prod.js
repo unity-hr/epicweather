@@ -35,7 +35,19 @@ gulp.task('connect:dist', function (done) {
     server: {
       baseDir: ['dist']
     },
-    ui: false
+    ui: false,
+  }, done);
+});
+
+gulp.task('connect:cbt', function (done) {
+  browserSync({
+    ghostMode: false,
+    notify: false,
+    port: 9000,
+    server: {
+      baseDir: ['dist']
+    },
+    ui: false,
   }, done);
 });
 

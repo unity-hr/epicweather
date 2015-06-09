@@ -22,10 +22,19 @@ h1, h2, h3 {
 }
 
 h2 {
-  margin-bottom: 0;
-  font-size: 160px;
+  font-size: 50px;
   line-height: 1;
   text-transform: uppercase;
+
+  @media (min-width: 30em) {
+    margin-bottom: 0.5em;
+    font-size: 70px;
+  }
+
+  @media (min-width: 90em) {
+    margin-bottom: 0;
+    font-size: 160px;
+  }
 }
 
 a {

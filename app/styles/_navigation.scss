@@ -16,6 +16,11 @@
     transform: translateY(2rem);
   }
 
+  .touchevents & {
+    background: rgba(#000, 0.75);
+    transform: none;
+  }
+
   .container {
     display: flex;
     align-items: center;
@@ -39,9 +44,26 @@
       display: block;
       padding: 1rem;
     }
+
+    &-item {
+      display: none;
+
+      &:first-child {
+        display: block;
+      }
+
+      @media (min-width: 60em) {
+        display: block;
+      }
+    }
   }
 
   .btn {
+    display: none;
     margin-left: 1rem;
+
+    @media (min-width: 60em) {
+      display: inline-block;
+    }
   }
 }
