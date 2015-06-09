@@ -3,6 +3,10 @@
     border-top: 1px solid #D8D8D8;
   }
 
+  .container {
+    position: relative;
+  }
+
   .section {
     &-image {
       margin-top: 13rem;
@@ -23,6 +27,13 @@
       }
     }
   }
+}
+
+&-smart &-image-side {
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  color: #319DFF;
 }
 
 &-infinite &-image {
