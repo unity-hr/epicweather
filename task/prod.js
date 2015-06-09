@@ -4,6 +4,10 @@ var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var shell = require('shelljs');
 
+var revAll = new $.revAll({
+  dontRenameFile: [/^\/favicon.ico$/g, '.html']
+});
+
 gulp.task('html', ['scripts', 'styles'], function () {
   gulp.src([
     'app/**/*.html',
@@ -20,7 +24,14 @@ gulp.task('html', ['scripts', 'styles'], function () {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('extras', function () {
+gulp.task('rev', ['html', 'images'], function () {
+  return gulp.src('dist/**/*')
+    .pipe(revAll.revision())
+    .pipe(gulp.dest('dist'))
+    .pipe($.revNapkin());
+});
+
+gulp.task('extras', ['rev'], function () {
   return gulp.src([
     'app/*.*',
     '!app/*.html'
@@ -39,21 +50,9 @@ gulp.task('connect:dist', function (done) {
   }, done);
 });
 
-gulp.task('connect:cbt', function (done) {
-  browserSync({
-    ghostMode: false,
-    notify: false,
-    port: 9000,
-    server: {
-      baseDir: ['dist']
-    },
-    ui: false,
-  }, done);
-});
-
 gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
 
-gulp.task('build', ['jshint', 'html', 'images', 'extras'], function () {
+gulp.task('build', ['jshint', 'html', 'rev', 'extras'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', showFiles: true, gzip: true}));
 });
 
