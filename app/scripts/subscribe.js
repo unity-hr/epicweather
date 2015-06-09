@@ -19,9 +19,9 @@ form.addEventListener('submit', function (event) {
 
     if (res.code) {
       console.error(res.message);
-      error.style.display = 'block'
+      error.style.display = 'block';
     } else {
-      success.style.display = 'block'
+      success.style.display = 'block';
     }
   });
 
