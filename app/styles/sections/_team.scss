@@ -56,13 +56,13 @@
         font-size: 24px;
       }
 
-      &-role {
+      &-role,
+      &-description {
         font-size: 16px;
         color: #000;
       }
 
       &-description {
-        margin-top: 1rem;
         margin-bottom: 0;
       }
     }
