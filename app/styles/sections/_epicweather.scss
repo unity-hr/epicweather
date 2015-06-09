@@ -4,7 +4,23 @@
   .section {
     &-item {
       width: 100%;
-      min-width: 1440px;
+      min-height: 800px;
+      padding-bottom: calc(55.56% - 800px);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &:nth-child(1) {
+        background-image: url('../images/carousel/beach.jpg');
+      }
+
+      &:nth-child(2) {
+        background-image: url('../images/carousel/wind.jpg');
+      }
+
+      &:nth-child(3) {
+        background-image: url('../images/carousel/rain.jpg');
+      }
 
       img {
         width: 100%;
