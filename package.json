@@ -47,6 +47,7 @@
   },
   "dependencies": {
     "flickity": "^1.0.2",
+    "imagesloaded": "^3.1.8",
     "skrollr": "^0.6.26",
     "velocity-animate": "^1.2.2"
   }

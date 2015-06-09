@@ -1,6 +1,18 @@
 &-epicweather {
   padding: 0;
 
+  .section {
+    &-item {
+      width: 100%;
+      min-width: 1440px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
   .flickity-page-dots {
     bottom: 2rem;
 
