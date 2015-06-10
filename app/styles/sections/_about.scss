@@ -9,10 +9,17 @@
 
   .section {
     &-image {
+      position: relative;
       margin-top: 6rem;
 
       @media (min-width: 60em) {
-        margin-top: 13rem;
+        margin-top: 10rem;
+      }
+
+      svg {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }
@@ -33,23 +40,16 @@
   }
 }
 
-&-smart &-image-side {
-  display: none;
-  position: absolute;
-  top: 70%;
-  left: 15%;
-  color: #319DFF;
-
-  @media (min-width: 60em) {
-    display: block;
-  }
+&-smart &-image {
+  height: 264px;
 }
 
 &-infinite &-image {
-  margin-right: -5rem;
+  height: 266px;
 }
 
 &-fun &-image {
+  height: 284px;
   margin-top: 4rem;
 
   @media (min-width: 60em) {
