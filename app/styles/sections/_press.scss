@@ -1,0 +1,36 @@
+&-press {
+  background: #000;
+  border-bottom: 1px solid #4C4C4C;
+  color: rgba(#fff, 0.75);
+
+  @media (min-width: 60em) {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .section {
+    &-icon {
+      width: auto;
+      height: auto;
+      border: 0;
+
+      a {
+        color: #319DFF;
+      }
+    }
+
+    &-title {
+      margin-bottom: 0.25em;
+      font-size: 40px;
+      color: #fff;
+
+      @media (min-width: 30em) {
+        font-size: 60px;
+      }
+
+      @media (min-width: 60em) {
+        font-size: 90px;
+      }
+    }
+  }
+}

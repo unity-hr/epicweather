@@ -112,6 +112,14 @@
        M20.9,4.5l-5,8.7H5.8l6.3-6.4L20.9,4.5z M15.8,16l5,8.7l-8.8-2.2L5.8,16H15.8z M18.3,14.6l5-8.7l2.4,8.7l-2.4,8.7L18.3,14.6z"/>
   </symbol>
 
+  <symbol id="dropbox" viewBox="0 0 105 97">
+    <polygon fill="currentColor" points="31.4,0 0.7,20 21.9,37 52.8,17.9     "/>
+    <polygon fill="currentColor" points="0.7,54 31.4,74.1 52.8,56.1 21.9,37     "/>
+    <polygon fill="currentColor" points="52.8,56.1 74.3,74.1 105,54 83.8,37     "/>
+    <polygon fill="currentColor" points="105,20 74.3,0 52.8,17.9 83.8,37     "/>
+    <polygon fill="currentColor" points="52.9,60 31.4,77.9 22.1,71.9 22.1,78.6 52.9,97 83.7,78.6 83.7,71.9 74.4,77.9     "/>
+  </symbol>
+
   <symbol id="facebook" viewBox="0 0 10 20">
     <title>Facebook</title>
     <path fill="currentColor" d="M9.1,10.1l-2.7,0l0,9.9H2.7v-9.9H0.2V6.6l2.5,0l0-2c0-2.8,0.8-4.5,4-4.5h2.7v3.4H7.8C6.5,3.6,6.4,4,6.4,4.9
