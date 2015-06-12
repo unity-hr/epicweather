@@ -50,9 +50,8 @@ var processors = [
 ];
 
 gulp.task('styles', function () {
-  return gulp.src('app/styles/**/*.scss')
-    .pipe($.plumber())
-    .pipe($.sass()).on('error', $.sass.logError)
+  gulp.src('app/styles/**/*.scss')
+    .pipe($.sass.sync()).on('error', $.sass.logError)
     .pipe($.postcss(processors))
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(browserSync.stream());
