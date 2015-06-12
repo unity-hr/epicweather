@@ -32,4 +32,12 @@
       color: #d9534f;
     }
   }
+
+  &-submit {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    color: inherit;
+  }
 }

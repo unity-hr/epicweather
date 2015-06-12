@@ -228,18 +228,25 @@
     <section class="section section-subscribe" id="subscribe">
       <div class="container">
         <div class="section-icon">
-          <svg class="icon" role="presentation" width="56" height="56">
-            <use xlink:href="images/icons.svg#smiley" />
+          <svg class="icon" role="presentation" width="53" height="35">
+            <use xlink:href="images/icons.svg#logo-outline" />
           </svg>
         </div>
         <h2 class="section-title">Subscribe</h2>
         <div class="section-lead">
-          <p>Subscribe our newsletter to receive epic updates. We'll send you a few notifications along the way.</p>
+          <p>Subscribe to our newsletter to receive epic updates. We'll send you a few notifications along the way.</p>
         </div>
 
         <form class="form" action="#" novalidate>
           <label class="sr-only" for="subscribeEmail">Enter your mail to receive updates</label>
-          <input id="subscribeEmail" class="form-control" type="email" name="email" placeholder="Enter your mail to receive updates">
+          <div class="form-group">
+            <input id="subscribeEmail" class="form-control" type="email" name="email" placeholder="Enter your mail to receive updates">
+            <button class="form-submit" type="submit">
+              <svg class="icon" role="img" title="Submit" width="39" height="27">
+                <use xlink:href="images/icons.svg#go" />
+              </svg>
+            </button>
+          </div>
           <div class="form-feedback form-feedback-loading">
             <svg class="icon" role="img" title="Loading" width="69" height="42">
               <use xlink:href="images/icons.svg#logo" />
