@@ -26,7 +26,8 @@
 }
 
 @each $section, $color in (
-  smart: #319DFF,
+  epic: color(primary),
+  smart: color(primary),
   infinite: #9633FF,
   fun: #FD8E00
 ) {
@@ -37,6 +38,27 @@
         color: $color;
       }
     }
+  }
+}
+
+&-epic &-image {
+  margin-bottom: 3rem;
+
+  @media (min-width: 30em) {
+    margin-bottom: 4rem;
+  }
+
+  @media (min-width: 60em) {
+    margin-bottom: 6rem;
+  }
+
+  @media (min-width: 90em) {
+    margin-bottom: 8rem;
+  }
+
+  img {
+    max-width: 300%;
+    height: auto;
   }
 }
 
