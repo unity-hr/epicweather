@@ -12,14 +12,17 @@
 
       &:nth-child(1) {
         background-image: url('../images/carousel/beach.jpg');
+        background-color: #83c6f0;
       }
 
       &:nth-child(2) {
         background-image: url('../images/carousel/wind.jpg');
+        background-color: #fdcc49;
       }
 
       &:nth-child(3) {
         background-image: url('../images/carousel/rain.jpg');
+        background-color: #90949f;
       }
 
       img {
